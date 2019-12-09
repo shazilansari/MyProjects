@@ -1,0 +1,30 @@
+*                   {padding: 0px; margin: 0px; line-height: 1.2}
+
+#page               {position: absolute; top: 720px; left: 850px; width: 850px}
+
+a                   {text-decoration: none; color: black}
+p                   {margin: 15px 0px}
+ul                  {list-style-type: none}
+
+.menu               {position:absolute; top: 110px; width: 140px; height: 35px; z-index: 3;
+                     border: 1px solid black; color: black; background-color: rgb(212, 212, 212);
+                     text-align: center}
+.menu a             {display: block; width: 80px; height: 30px; color: black}
+.menu a:hover       {background-color: rgb(151, 151, 151); color: white}
+
+#menu1, #menu1List  {left: 30px}
+
+.menuList           {position: absolute; top: 146px; width: 140px; z-index: 0;
+                     background-color: ivory; border: 1px solid black; display: none}
+
+.menuList li        {margin: 10px}
+.menuList a         {display: block; width: 80px}
+
+
+
+
+
+
+
+
+

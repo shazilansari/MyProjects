@@ -1,0 +1,187 @@
+#head {width: 1200px; height: 180px; padding: 3px}
+* { box-sizing: border-box; }
+header, nav, main, footer { display: block; }
+body { background-color: #D0D0D0;  
+      background-image: url(basketball.jpg);
+      color: #000000;
+      font-family: arial;
+	  background-image: url(basketball.jpg);
+}
+#wrapper { background-color: #B0B0B0;
+
+           width: 80%;
+           margin-right: auto;
+	   margin-left: auto;
+           min-width: 1000px;
+		   max-width: 1280px;
+}
+figure {width: 365px; border: 1px solid #000000; padding: 5px;}
+figcaption {text-align: center; font-family: Papyrus, fantasy;}
+
+header { background-color: #FF4500;
+         color: #000000;
+        height: 180px;
+       background-image: url(rawr.jpg);
+       background-repeat: repeat;
+}
+h1 { padding-top: 50px;
+    padding-left: 90px;
+	font-size: 4.6em;
+}
+
+nav { text-align: center; 
+     font-weight: bold; 
+	 font-size: 1.5em;
+	 padding-top: 50px;
+	 float: left;
+	 width: 200px;
+}
+nav a { text-decoration: none;  display: block; padding: 15px; background-color: #FFFF00; border-bottom: 1px solid #ffffff; padding: 20px; 
+	     
+ 	     background-image: url(ball.png);
+           background-repeat: no-repeat; 
+           background-position: left 0  }
+
+nav a:link { color: #000000; }
+nav a:visited{ color: #FF0000; }
+nav a:hover { color: #0000FF; }
+nav ul { list-style-type: none;
+       padding-left: 0; 
+}
+footer { background-color: #FFA500;
+       font-size: medium;
+	   font-style: italic;
+	   text-align: center;
+	   padding-bottom: 10px;
+}
+main { padding: 0 0 1em 0;
+      margin-left: 200px;
+	  background-color: #add8e6;
+}
+
+main h2 { padding-left: 3em; padding-right: 2em; background-image: url(bar.png); background-repeat: repeat }
+
+
+h4 { background-color: #d2B48C;
+    font-size: 1.2em;
+	padding-left: 10px;
+	padding-bottom: 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #000033;
+	clear: left;
+}
+.details { padding-left: 20%;
+          padding-right: 20%;
+		  overflow: auto;
+}
+.floatleft { float: left;
+             padding-right: 20px;
+			 padding-bottom: 20px; 
+}
+img { padding-left: 10px;
+     padding-right: 10px;
+}
+#court { background-image: url(court.jpg);
+           background-size: 100% 100%;
+		   height: 340px; }
+#allstar { background-image: url(allstar.jpg);
+           background-size: 100% 100%;
+		   height: 350px; }
+#players { background-image: url(players.jpg);
+           background-size: 100% 100%;
+		   height: 320px; }
+#mobile { display: none; }
+#desktop { display: inline; }
+table { width: 85%;
+      margin: auto;
+	  border-spacing: 0;
+	  background-color: #FFFFFF; }
+td, th { padding: 10px; }
+tr:nth-of-type(odd) { background-color: #FFFF00; }
+form { padding: 2em; }
+label { float: left;
+      display: block;
+	  text-align: right;
+	   width: 8em;
+	   padding-right: 1em; }
+input, textarea { display: block; margin-bottom: 1em; }
+#mySubmit { margin-left: 9.5em; }
+
+@media only screen and (max-width: 1024px) {
+	body { background-image: none; }
+	#wrapper { width: auto;
+				min-width: 0;
+				margin: 0;
+				padding: 0;
+				box-shadow: none; 	}
+	header { border-bottom: 5px solid #FEF6C2; }
+	h1 { margin-top: 0;
+	    margin-bottom: 1em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		font-size: 2.5em; 	}
+	nav { float: none;
+	      width: auto;
+		  padding-top: 0;
+		  margin: 10px;
+		  font-size: 1.3em; 	}
+	nav li  { display: inline-block; }
+	nav a { padding: 1em; 
+	      width: 8em;
+		  font-weight: bold;
+		  border-style: none; }
+	nav ul { padding: 0;
+	       margin: 0; }
+	#heroroad, #heromugs, #heroguitar { margin: 0; padding: 0; }
+	main { padding: 0;
+	      margin: 0;
+		  font-size: 90%; }
+}
+
+body                     {background-color: rgb(247, 240, 224) }
+
+
+#clock                   {position: absolute; top: 5px; left: 5px; width: 155px; 
+                          height: 180px; background-color: rgb(50, 153, 254); 
+                          border: 3px inset white; text-align: center;
+                          color: rgb(247, 240, 224); font-weight: bold; 
+                          font-family: Arial, Helvetica, sans-serif}
+
+#clock h4, #countdown h4 {text-align: center; margin-bottom: 0px; letter-spacing: 4; 
+                          font-variant: small-caps; color: yellow; 
+                          background-color: black; width: 100%; margin-top: 0px}
+#clock p, #countdown p   {color: rgb(247, 240, 224); font-weight: bold; letter-spacing: 1.5; 
+                          margin-top: 2px}
+#clock img               {margin: 2px}
+#clock input             {font-size: 12pt; text-align: center; background-color: rgb(247, 240, 224); 
+                          color: rgb(50, 153, 254); font-weight: bold}
+
+#logo                    {position: absolute; top: 5px; left: 165px; width: 390px; 
+                          height: 180px}
+
+#countdown               {position: absolute; top: 5px; left: 560px; width: 155px; 
+                          height: 180px; background-color: rgb(50, 153, 254); 
+                          border: 3px inset white;
+                          font-family: Arial, Helvetica, sans-serif}
+
+#countdown input         {font-size: 12pt; text-align: right; background-color: rgb(247, 240, 224); 
+                          color: rgb(50, 153, 254); font-weight: bold; margin: 2px}
+
+#links                   {position: absolute; top: 195px; left: 5px; width: 170px}
+
+#links a                 {display: block; width: 130px; background-color: rgb(247, 240, 224); 
+                          color: rgb(50, 153, 254); font-size: 9pt;
+                          margin: 3px 0px 3px 0px; text-decoration: none; padding: 5px; 
+                          font-family: Arial, Helvetica, sans-serif;
+                          border: 3px solid rgb(247, 240, 224)}
+
+#links a:hover           {color: rgb(50, 153, 254); border: 3px inset white}
+
+#main                    {position: absolute; top: 195px; left: 160px; width: 560px}
+#main img                {float: right}
+#content:first-line      {font-variant: small-caps}
+#content:first-letter    {float: left; font-size: 350%; line-height: 0.8; margin-right: 2px; 
+                          color: rgb(50, 153, 254)}
+#main address            {font-size: 8pt; color: rgb(50, 153, 254); text-align: center;
+                          font-family: Arial, Helvetica, sans-serif; 
+                          border-top: 1px solid rgb(50, 153, 254); font-style: normal}

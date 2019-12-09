@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
+
+<head>
+  <title>Ansari Basketball Camp</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bball.css">
+  <link rel="stylesheet" href="calendar.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="protect.js" type="text/javascript"></script>
+  <script type="text/javascript">
+
+ 	// This is the same first javascript feature used on the home page. 
+	function showEM(userName, emServer) 
+        {
+	     userName = stringReverse(userName); // reverse the text of the userName parameter
+	     emServer = stringReverse(emServer); // reverse the text of the emServer parameter
+	     var emLink = userName + "@"+emServer; // combine the text of the userName and emServer
+
+	     document.write("<a href='mailto:" + emLink + "'>"); 
+	     document.write(emLink); 
+	     document.write("</a>"); 
+        } 
+
+	// This is the third javascript feature I used which displays a clock of the 
+	// current time and date 
+	// This clock is shown on the top of this webpage 
+        function Clock() 
+        { 
+		// the Today variable contains the current date and time 
+		   var today = new Date();
+
+		// display the current date and time 
+		document.clockform.dateNow.value = showDate(today); 
+		document.clockform.timeNow.value = showTime(today); 
+
+                // calculate the time left until the New Year’s Bash 
+	        var days = calcDays(today);
+
+		// display days rounded to the next lowest integer
+		document.clockform.daysLeft.value = Math.floor(days); 
+		
+		// calculate the hours left in the current day
+		var hours = (days - Math.floor(days))*24;
+		
+		// display hours rounded to the next lowest integer
+		document.clockform.hrLeft.value = Math.floor(hours); 
+		
+		// calculate the minutes left in the current hour
+		var minutes = (hours - Math.floor(hours))*60;
+
+		// display minutes rounded to the next lowest integer
+		document.clockform.minLeft.value = Math.floor(minutes); 
+
+		// calculate the seconds left in the current minute
+		var seconds = (minutes - Math.floor(minutes))*60;
+
+		// display seconds rounded to the next lowest integer
+		document.clockform.secLeft.value = Math.floor(seconds);
+      } 
+
+// The fourth javascript feature I used was to display a calendar on this webpage
+// The instantiation of this feature was done through adding the project.js javascript file
+
+// The fifth javascript feature I used was form checking used in tutorial 5
+// I needed to call the project.js javascript file to instantiate this feature. 
+
+
+  </script>
+</head>
+
+<body onload="setInterval('Clock()', 1000)">
+     <div id="head">
+	   <script type="text/javascript"> 
+	       calendar("March 15, 2018"); 
+	   </script>
+     </div>
+
+     <form name="clockform" id="clockform" action="">
+          <div id="clock">
+          <h4>Date and Time</h4>
+          <p>
+              <input size="12" id="dateNow" name="dateNow" /><br />
+              <img src="clock.jpg" alt="" /><br />
+              <input size="12" id="timeNow" name="timeNow" />
+         </p>
+         </div>
+    <div id="wrapper">
+
+
+   <header>
+      <h1>Contact Us</h1>
+   </header>
+
+
+
+   <nav>
+      <ul>
+          <li><a href="home.html">WhatToExpect</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="stories.html">Stories</a></li>
+          <li><a href="about.html">AboutYou!</a></li>
+      </ul>
+   </nav>
+
+   <main>
+      <h2>Let us know more about you!</h2>
+      <p>We would love to understand your ambition more! Contact us and give us some information about your basketball journey so we can better understand you as a player!</p>
+    <form>
+        <label>First Name: </label>
+               <input class="text" name="fname" id="fname" size="25" />
+        <label>Last Name: </label>
+               <input class="text" name="lname" id="lname" size="25" />
+        <label>Address: </label>
+               <textarea id="street" name="street" cols="40" rows="7"></textarea>
+               <input type="submit" name="nextb" id="nextb" value="Send to Begin!" />
+   </form>
+   </main>
+
+
+  <footer>
+      Your Inner Player Awaits!<br>
+     <script type="text/javascript">
+	  showEM("pmaCirasnA", "moc.liamg");
+     </script>
+
+</footer>
+</div>
+</body>
+</html>

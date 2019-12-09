@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ansari Basketball Camp</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="bball.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<script src="protect.js" type="text/javascript"></script> 
+<script type="text/javascript"> 
+
+	// First feature of javascript shown on each page of the website
+	// Way to protect emails which was used in Tutorial 1
+	// In the footer of each web page, this javascript feature is instantiated 
+	 
+	function showEM(userName, emServer) 
+	{
+		userName = stringReverse(userName); // reverse the text of the userName parameter
+		emServer = stringReverse(emServer); // reverse the text of the emServer parameter
+		var emLink = userName + "@"+emServer; // combine the text of the userName and emServer
+
+		document.write("<a href='mailto:" + emLink + "'>"); 
+		document.write(emLink); 
+		document.write("</a>"); 
+	} 
+
+// The second javascript feature I used was from tutorial 4 which was menus.
+// I displayed a menu on the home page to list the different basketball skills 
+</script> 
+<link href="menu.css" rel="stylesheet" type="text/css" />
+<script type = "text/javascript" src = "menus.js"></script>
+</head>
+
+
+<body>
+    <div id="wrapper">
+    <header>
+        <h1>Ansari Basketball Camp</h1>
+    </header>
+
+    <nav>
+         <ul>
+              <li><a href="home.html">WhatToExpect</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="stories.html">Stories</a></li>
+              <li><a href="about.html">AboutYou!</a></li>
+        </ul>
+ 
+        <img src="nba.png" width="180" height="130" alt="Basketball Hoop">
+        <p class="news">Keep up with scores! Visit
+        <a href="http://nba.com">NBA.com</a></p>
+   </nav>
+
+
+   <main>
+       <div id="court"></div>
+       <h2>Learn the fundamentals of the game!</h2>
+       <p>In the game of basketball, the style of play has changed over the years! Every young player wants to shoot like Steph Curry and attack like LeBron James. What they forget is that those players have put in time and effort to perfect their game. In this basketball camp, you will learn the fundamentals of the game and be able to develop a solid foundation! You will be on your way to being a great basketball star in no time! </p>
+
+       <h2>Let us show you your true potential in a matter of months!</h2>
+       <p>Playing basketball is not as easy as picking up the ball and becoming a great player. The sport requires time, effort, and dedication. In just a few months, we will help transform you into the basketball player you have always dreamed of being!</p>
+
+     <div id="page">
+     <form id="searchForm" action="">
+
+     <div id="menu1" class="menu">
+          <a href="#">Basketball Skills</a>
+     </div>
+
+     <div id="menu1List" class="menuList">
+         <ul>
+            <li><a href="#">On the ball training</a></li>
+            <li><a href="#">Off the ball training</a></li>
+            <li><a href="#">Shooting</a></li>
+            <li><a href="#">Dribbling</a></li> 
+            <li><a href="#">Passing</a></li>
+            <li><a href="#">Scoring</a></li>
+            <li><a href="#">Rebounding</a></li>
+         </ul>
+      </div>
+
+    </form>
+    </div>
+
+
+  <figure>
+     <img src="camp.jpg" alt="camp" height="300" width="350">
+     <figcaption>
+          Our camp is for all ages!
+     </figcaption>
+  </figure>
+
+
+   <div>
+      145 Baller Street<br>
+      Chicago, IL 67004<br>
+      <a id="mobile" href="tel:630-986-2345"></a> <span id="desktop">630-986-2345</span><br><br>
+  </div>
+
+</main>
+
+<footer>
+    Your Inner Player Awaits!<br>
+
+    <script type="text/javascript">
+         showEM("pmaCirasnA", "moc.liamg");
+    </script>
+
+
+</footer>
+</div>
+</body>
+</html>

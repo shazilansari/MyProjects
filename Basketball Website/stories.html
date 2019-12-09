@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ansari Basketball Camp</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="bball.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="protect.js" type="text/javascript"></script>
+    <script type="text/javascript"> 
+	     function showEM(userName, emServer) 
+             { 
+	         userName = stringReverse(userName); // reverse the text of the userName parameter
+	         emServer = stringReverse(emServer); // reverse the text of the emServer parameter
+	         var emLink = userName + "@"+emServer; // combine the text of the userName and emServer
+
+	         document.write("<a href='mailto:" + emLink + "'>"); 
+	         document.write(emLink); 
+	         document.write("</a>"); 
+	     } 
+    </script>
+</head>
+
+
+<body>
+      <div id="wrapper">
+      <header>
+          <h1>Stories of our players</h1>
+      </header>
+
+
+          <nav>
+              <ul>
+                   <li><a href="home.html">WhatToExpect</a></li>
+                   <li><a href="pricing.html">Pricing</a></li>
+                   <li><a href="stories.html">Stories</a></li>
+                   <li><a href="about.html">AboutYou!</a></li>
+             </ul>
+         </nav>
+
+
+   <main>
+       <div id="players"></div>
+          <h2>Who has attended our camp?</h2>
+              <p>Our camp has helped many different players including NBA players! Yes thats right! <i><strong>Both LeBron James and Steph Curry have attended our camp!</i></strong> Read their stories below!</p>
+
+         <h4>LeBron James</h4>
+        <div class="details">
+             <a href="leBron.jpg"><img src="leBron.jpg" class="floatleft" alt="LeBron James" width="120" height="100"></a>"I knew I was going to be great one day! I just needed help on my condefence. The Ansari Basketball Camp helped me gain confidence." - LeBron James
+       </div>
+
+     <h4>Steph Curry</h4>
+          <div class="details">
+               <a href="steph.jpg"><img src="steph.jpg" class="floatleft" alt="Steph Curry" width="120" height="100"></a>
+"I struggled with my shot because I needed to shoot above my head! The Ansari basketball camp helped me develop my form and learn how to shoot with precision." - Steph Curry
+         </div>
+
+
+    </main>
+
+  <footer>
+       Your Inner Player Awaits!<br>
+           <script type="text/javascript">
+		showEM("pmaCirasnA", "moc.liamg");
+	   </script>
+
+
+  </footer>
+  </div>
+
+
+</body>
+</html>
+
